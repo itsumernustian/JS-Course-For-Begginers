@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objects In JS</title>
+</head>
+<body>
+	<h1>Objects in JS</h1>
+	<script type="text/javascript">
+		//creating object by literal way
+		var car={
+			Name:'Corolla',
+			Model:'2020',
+			Color:'Black',
+			NumberPlate:174,
+			specification:function()
+			{
+				//To print on web page
+				document.write("The name of car is ",this.Name ," & Model :",this.Model ," Color is ",this.Color," NumberPlate :",this.NumberPlate);
+				//To print on the console
+				console.log("The name of car is ",this.Name ," & Model :",this.Model ," Color is ",this.Color," NumberPlate :",this.NumberPlate);
+			}
+		}
+		//calling method of object
+		car.specification();
+		//calling the property of object using dot notation
+		document.write(car.Name);
+		//calling the property of object using Square Notation
+		document.write(car['Model']);
+
+
+	</script>
+</body>
+</html>

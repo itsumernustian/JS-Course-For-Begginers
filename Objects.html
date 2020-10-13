@@ -26,6 +26,21 @@
 		document.write(car.Name);
 		//calling the property of object using Square Notation
 		document.write(car['Model']);
+		//defining object via constructor notation
+		var hotel=new Object();
+		hotel.name="Marquee";
+		hotel.room=50;
+		hotel.bookedRoom=28;
+		hotel.checkRemainingRoom=function()
+		{
+			return this.room-this.bookedRoom;
+		};
+
+		var remain=hotel.checkRemainingRoom();
+		document.write("Remaining Room in Hotel :" ,remain);
+		//Updating property of object
+		hotel.name="Sareena";
+		document.write(hotel.name);
 
 
 	</script>
